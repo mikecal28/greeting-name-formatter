@@ -1,0 +1,106 @@
+html {
+  width: 100%;
+  height: 100%;
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+
+    #root {
+      width: 100%;
+      height: 100%;
+
+      .app {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .app-wrapper {
+          width: max(25%, 250px);
+          height: max(min(calc(250vh - 100vw), 450px), 300px);
+          min-height: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          background-color: red;
+          padding: 0 5vw;
+          border-radius: 1vw;
+          box-shadow: 0px 5px 5px 2px gray;
+
+          > * {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+          }
+
+          h1 {
+            width: 20vw;
+            color: maroon;
+            background-color: lightcoral;
+            height: max(min(calc((250vh - 100vw) / 6), 130px), 80px);
+            border-radius: 0.25vw;
+            min-width: 200px;
+          }
+
+          h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: cyan;
+            width: 20vw;
+            min-width: 200px;
+            height: max(min(calc((250vh - 100vw) / 6), 100px), 50px);
+            font-size: 20px;
+            box-shadow: 0px 5px 5px -3px gray;
+            border-radius: 0.25vw;
+          }
+
+          input {
+            border: none;
+            outline: none;
+            height: 40px;
+            width: max(20vw, 200px);
+            margin: 5px;
+            padding: 5px;
+            font-size: 20px;
+            box-shadow: 0px 5px 5px -3px gray;
+            background-color: cyan;
+            color: maroon;
+            border-radius: 0.25vw;
+
+            &::-webkit-input-placeholder {
+              padding-left: 20px;
+              font-size: 20px;
+              color: lighco;
+            }
+          }
+
+          button {
+            height: 40px;
+            width: max(20vw, 200px);
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0px 5px 5px -3px gray;
+            background-color: lightcoral;
+            border: none;
+            color: white;
+            border-radius: 0.25vw;
+          }
+        }
+      }
+    }
+  }
+}
